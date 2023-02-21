@@ -14,7 +14,7 @@ public class ConnectionConfiguration {
 
 
             Connection connection = null;
-            String url = "jdbc:mysql://localhost:3306/Mandag_bank1?serverTimezone=CET&useSSL=false";
+            String url = "jdbc:mysql://localhost:3306/tirsdag_bib?serverTimezone=CET&useSSL=false";
             String user = "root";
             String password = "1234";
 

@@ -18,7 +18,7 @@ public class BrugerMapper
         try
         {
             Connection connection = ConnectionConfiguration.getConnection();
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Mandag_bank1.bruger");
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM tirsdag_bib.bruger;");
             ResultSet result = statement.executeQuery();
             while (result.next())
             {
@@ -33,10 +33,6 @@ public class BrugerMapper
         } catch (Exception e)
         {
             e.printStackTrace();
-        }
-        for (Bruger bruger : brugerList)
-        {
-
         }
         return brugerList;
     }
