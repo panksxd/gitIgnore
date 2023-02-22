@@ -11,7 +11,7 @@ import java.util.List;
 
 public class PostnrMapper
 {
-    protected List<Postnr> getPostnr()
+    protected static List<Postnr> getPostnr()
     {
         List<Postnr> postnrList = new ArrayList<>();
         try

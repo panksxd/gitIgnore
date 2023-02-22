@@ -11,7 +11,7 @@ import java.util.List;
 
 public class BogMapper
 {
-    protected List<Bog> getBogList()
+    protected static List<Bog> getBogList()
     {
         List<Bog> bogList = new ArrayList<>();
 

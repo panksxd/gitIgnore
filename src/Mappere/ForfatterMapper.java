@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ForfatterMapper
 {
-    protected List<Forfatter> getForfatter()
+    protected static List<Forfatter> getForfatter()
     {
         List<Forfatter> forfatterList = new ArrayList<>();
         try

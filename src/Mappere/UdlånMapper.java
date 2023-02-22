@@ -11,7 +11,7 @@ import java.util.List;
 
 public class UdlånMapper
 {
-    protected List<Udlån> getUdlån()
+    protected static List<Udlån> getUdlån()
     {
         List<Udlån> udlånList = new ArrayList<>();
         try

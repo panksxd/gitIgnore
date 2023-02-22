@@ -12,7 +12,7 @@ import java.util.List;
 public class BrugerMapper
 {
 
-    protected List<Bruger> getBrugerList()
+    protected static List<Bruger> getBrugerList()
     {
         List<Bruger> brugerList = new ArrayList<>();
         try
