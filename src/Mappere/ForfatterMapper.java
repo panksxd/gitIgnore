@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ForfatterMapper
 {
-    public List<Forfatter> getForfatter()
+    protected List<Forfatter> getForfatter()
     {
         List<Forfatter> forfatterList = new ArrayList<>();
         try
@@ -23,7 +23,7 @@ public class ForfatterMapper
             while(result.next())
             {
                 int idforfatter = result.getInt("idforfatter");
-                String navn = result.getString("navn");
+                String navn = result.getString("navn_forfatter");
 
                 Forfatter forfatter = new Forfatter(idforfatter, navn);
                 forfatterList.add(forfatter);

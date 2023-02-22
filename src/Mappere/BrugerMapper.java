@@ -12,7 +12,7 @@ import java.util.List;
 public class BrugerMapper
 {
 
-    public List<Bruger> getBrugerList()
+    protected List<Bruger> getBrugerList()
     {
         List<Bruger> brugerList = new ArrayList<>();
         try
@@ -23,9 +23,9 @@ public class BrugerMapper
             while (result.next())
             {
                 int id = result.getInt(("idbruger"));
-                String navn = result.getString(("navn"));
+                String navn = result.getString(("navn_bruger"));
                 String adresse = result.getString(("adresse"));
-                int postnr = result.getInt(("postnr"));
+                int postnr = result.getInt(("postnr_bruger"));
 
                 Bruger bruger = new Bruger(id, navn, adresse, postnr);
                 brugerList.add(bruger);

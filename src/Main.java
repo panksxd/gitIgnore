@@ -12,7 +12,7 @@ public class Main
         PostnrMapper postnrMapper = new PostnrMapper();
         ForfatterMapper forfatterMapper = new ForfatterMapper();
         UdlånMapper udlånMapper = new UdlånMapper();
-        System.out.println(udlånMapper.getUdlån());
+        System.out.println(brugerMapper.getBrugerList());
     }
 
 
